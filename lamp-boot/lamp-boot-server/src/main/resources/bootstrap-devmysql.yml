@@ -4,5 +4,5 @@ lamp:
 
 logging:
   file:
-    path: /Users/tangyh/data/logs
+    path: /kangod/lamp-reource/logs
   config: classpath:logback-spring-dev.xml

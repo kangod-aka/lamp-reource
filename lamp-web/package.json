@@ -1,7 +1,7 @@
 {
   "name": "lamp-web",
   "version": "3.9.0",
-  "description": "lamp-cloud 前端项目",
+  "description": "lamp-boot 前端项目",
   "author": "zuihou",
   "license": "Apache 2.0",
   "scripts": {

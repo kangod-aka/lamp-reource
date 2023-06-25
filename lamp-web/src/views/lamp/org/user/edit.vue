@@ -319,7 +319,6 @@ export default {
       }
     },
     setUser(val, orgs, dicts, enums) {
-      debugger;
       const vm = this;
       if (val) {
         vm.user = {...vm.user,...val};

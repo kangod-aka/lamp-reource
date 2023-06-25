@@ -3,8 +3,8 @@ lamp:
     type: REDIS
   redis:
     ip: 127.0.0.1
-    port: 16379
-    password: SbtyMveYNfLzTks7H0apCmyStPzWJqjy
+    port: 6379
+    password: 123456
     database: 0
   rabbitmq:
     enabled: false
@@ -15,8 +15,8 @@ lamp:
   druid:
     driverClassName: com.mysql.cj.jdbc.Driver
     username: 'root'
-    password: 'root'
-    url: jdbc:mysql://127.0.0.1:3306/lamp_defaults?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useUnicode=true&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&nullCatalogMeansCurrent=true
+    password: '123456'
+    url: jdbc:mysql://127.0.0.1:3306/lamp_none?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useUnicode=true&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&nullCatalogMeansCurrent=true
   database:
     dbType: MYSQL
     # 需要初始化的数据库前缀
@@ -26,7 +26,7 @@ lamp:
     tenantDatabasePrefix: lamp_base
     # SCHEMA模式专用
     owner: ''
-    multiTenantType: SCHEMA
+    multiTenantType: NONE
     # COLUMN模式专用 隔离租户的字段
     tenantIdColumn: tenant_code
     isSeata: false

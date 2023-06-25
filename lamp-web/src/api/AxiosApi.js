@@ -46,7 +46,6 @@ axios.interceptors.response.use(
 )
 
 function handleError(error, reject, opts) {
-  debugger
   let isAlert = opts.custom ? opts.custom['isAlert'] : true;
   isAlert = isAlert === undefined ? true : isAlert;
   if (isAlert) {
@@ -112,7 +111,6 @@ function handleSuccess(res, resolve, opts) {
       || resData.code === 40005 || resData.code === 40006
       || resData.code === 40008
     ) {
-      debugger
       MessageBox.alert(resData.msg, '提醒', {
         confirmButtonText: '确定',
         callback: () => {
